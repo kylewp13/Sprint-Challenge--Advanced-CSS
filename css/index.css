@@ -198,6 +198,9 @@ p {
   color: black;
   margin: 0 10px;
 }
+.navMain .navBar nav a:hover {
+  text-transform: uppercase;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
