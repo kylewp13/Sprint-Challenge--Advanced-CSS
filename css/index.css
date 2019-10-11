@@ -161,7 +161,16 @@ p {
   margin: 0 auto;
 }
 .navMain {
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 500px) {
+  .navMain {
+    position: static;
+  }
 }
 .navMain .navBar {
   width: 800px;
@@ -198,6 +207,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 120px;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 0;
+  }
 }
 .home .intro .main-header {
   border-radius: 5px;
@@ -317,4 +334,25 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+.home .form h3 {
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .form h3 {
+    font-size: 2rem;
+  }
+}
+.home .form form fieldset label {
+  font-size: 1rem;
 }
