@@ -1,1 +1,43 @@
 // Navigation code here
+
+.navMain {
+  background: @nav-bg;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @media @phone {
+    position: static;
+  }
+  
+  .navBar {
+    width: 800px;
+    margin: 0 auto;
+    .flex(center, column);
+    
+    @media @phone {
+      width: 500px;
+    }
+    h1 {
+      font-size: 4rem;
+      padding: 30px 0 20px 0;
+    }//close of h1
+    
+    nav {
+      padding-bottom: 10px;
+      
+      a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: black;
+        margin: 0 10px;
+
+        &:hover {
+          text-transform: uppercase;
+        } 
+        
+      }//close of a
+    }//close of nav
+  }//close of .navBar
+}//close of nav.Main
